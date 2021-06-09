@@ -1,0 +1,30 @@
+
+  return (
+    <NavigationContainer>
+      <UserContext.Provider value={{context, setContext}}>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="NavigationSection"
+            component={NavigationSection}
+          />
+          <Stack.Screen name="Homepage" component={HomepageSection} />
+          <Stack.Screen
+            name="ContactUs"
+            component={ContactUs}
+            options={{title: 'ContactUs'}}
+          />
+          <Stack.Screen
+            name="OurVenues"
+            component={OurVenues}
+            options={{title: 'Our Venues'}}
+          />
+          <Stack.Screen
+            name="SummaryPage"
+            component={SummaryPage}
+            options={{title: 'SummaryPage'}}
+          />
+        </Stack.Navigator>
+      </UserContext.Provider>
+    </NavigationContainer>
+  );
+};
