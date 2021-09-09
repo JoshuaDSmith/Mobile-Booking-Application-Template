@@ -83,7 +83,7 @@ const SummaryPage = props => {
 const styles = StyleSheet.create({
   SectionHeight: {
     backgroundColor: '#fff',
-    height: '100%',
+    height: '95%',
   },
   ButtonStyle: {
     fontSize: 60,
